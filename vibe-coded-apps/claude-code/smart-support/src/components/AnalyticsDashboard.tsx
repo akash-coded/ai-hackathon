@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Sparkles, TrendingUp, AlertTriangle, Lightbulb, ThumbsUp, ThumbsDown, Minus } from 'lucide-react';
 import { mockTickets } from '../constants';
-import { generateAnalytics, isApiKeyConfigured, AnalyticsInsights } from '../services/geminiService';
+import { generateAnalytics, isApiKeyConfigured } from '../services/geminiService';
+import type { AnalyticsInsights } from '../services/geminiService';
 import ProcessingView from './ProcessingView';
 
 export default function AnalyticsDashboard() {
